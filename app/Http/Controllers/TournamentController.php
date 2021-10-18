@@ -43,6 +43,7 @@ class TournamentController extends Controller
         
         $tournament = new Tournament();
         $tournament->name = $request->name;
+        $tournament->start_time = $request->start_time;
         $tournament->save();
         
         return redirect()->route('tournaments.index');

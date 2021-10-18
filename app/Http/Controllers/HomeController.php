@@ -10,4 +10,11 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function test()
+    {
+        $name = "Rick Carolus Gerrit Bruijs";
+        return view('test')
+            -> with('name', $name);
+    }
 }
